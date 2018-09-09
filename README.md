@@ -2,12 +2,13 @@
 ```
 <?php
 public function palindromo($p){
-$inv=strrev($p);
-if($inv==$p) return $inv;
-        return "no palindromo";
+        $inv=strrev($p);
+        if($inv==$p) return $inv;
+                return "no palindromo";
+        }
 }
 ```
-### Dadas dos horas con formato hh:mm:ss, devolver una lista de todos los segundos intermedios Por ejemplo para “10:10:10” y “15:15:15” devolver: ["10:10:10", "10:10:11", ... "15:15:14", "15:15:15"]*
+### Dadas dos horas con formato hh:mm:ss, devolver una lista de todos los segundos intermedios Por ejemplo para “10:10:10” y “15:15:15” devolver: ["10:10:10", "10:10:11", ... "15:15:14", "15:15:15"]
 
 ```
 <?php 
@@ -45,7 +46,7 @@ public function horas($hi,$hf){
 }
 ``` 
 
-### Dada la cadena “Esta es una frase”, retornar la frase que resulta de invertir cada palabra, manteniendo el orden de las palabras, así: “atsE se anu esarf”.*
+### Dada la cadena “Esta es una frase”, retornar la frase que resulta de invertir cada palabra, manteniendo el orden de las palabras, así: “atsE se anu esarf”.
 
 
 ```
