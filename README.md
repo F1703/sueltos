@@ -4,9 +4,8 @@
 public function palindromo($p){
         $inv=strrev($p);
         if($inv==$p) return $inv;
-                return "no palindromo";
-        }
-}
+        return "no palindromo";
+ }
 ```
 ### Dadas dos horas con formato hh:mm:ss, devolver una lista de todos los segundos intermedios Por ejemplo para “10:10:10” y “15:15:15” devolver: ["10:10:10", "10:10:11", ... "15:15:14", "15:15:15"]
 
