@@ -20,21 +20,21 @@ public function horas($hi,$hf){
                 for ($k = $hora01[2]; $k < 60; $k++) {
                     $hora[] = $i . ":" . $j . ":" . $k;
                     if ($i == $hora02[0] && $j == $hora02[1] && $k == $hora02[2]) {
-                        $b=true;
+                        $b = true;
                         break;
                     }
                     if ($k == 59) {
                         $hora01[2] = 0;
                     }
                 }//end for
-                if ($b== true) {
+                if ($b == true) {
                     break;
                 }
                 if ($j == 59) {
                     $hora01[1] = 0;
                 }
             }//end for
-            if ($b== true) {
+            if ($b == true) {
                 break;
             }
             if ($i == 22) {
