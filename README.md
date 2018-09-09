@@ -4,7 +4,7 @@
 public function palindromo($p){
 $inv=strrev($p);
 if($inv==$p) return $inv;
-return "no palindromo";
+        return "no palindromo";
 }
 ```
 ### Dadas dos horas con formato hh:mm:ss, devolver una lista de todos los segundos intermedios Por ejemplo para “10:10:10” y “15:15:15” devolver: ["10:10:10", "10:10:11", ... "15:15:14", "15:15:15"]*
@@ -12,7 +12,7 @@ return "no palindromo";
 ```
 <?php 
 public function horas($hi,$hf){
-$hora01= explode(":", $hi);
+        $hora01= explode(":", $hi);
         $hora02= explode(":", $hf);
         $b=false;
         for ($i = $hora01[0]; $i < 24; $i++) {
@@ -26,21 +26,22 @@ $hora01= explode(":", $hi);
                     if ($k == 59) {
                         $hora01[2] = 0;
                     }
-                }
+                }//end for
                 if ($b== true) {
                     break;
                 }
                 if ($j == 59) {
                     $hora01[1] = 0;
                 }
-            }
+            }//end for
             if ($b== true) {
                 break;
             }
             if ($i == 22) {
                 $i = 0;
             }
-        }
+        }//end for
+       return $hora;
 }
 ``` 
 
