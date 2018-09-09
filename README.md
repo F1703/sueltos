@@ -51,11 +51,11 @@ public function horas($hi,$hf){
 ```
 <?php
     public function frase($f){
-    $a01=explode(" ",$f);
-    foreach ($a01 as $key => $value) {
-        $fr[]=strrev($value);
-    }
-    $a=implode(" ",$fr);
-    return $a;
+        $a01=explode(" ",$f); //convertir en array
+        foreach ($a01 as $key => $value) { //recorrer array 
+                $fr[]=strrev($value); //revertir palabra y añadir a un array
+        }
+        $a=implode(" ",$fr); // comvertir array en string
+        return $a; //
     }
 ```
