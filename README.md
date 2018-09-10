@@ -59,3 +59,24 @@ public function horas($hi,$hf){
         return $a; //
     }
 ```
+
+
+
+## Download
+
+```
+git clone https://github.com/F1703/sueltos
+```
+
+#### Server
+```
+cd ../sueltos
+php -S localhost:8000
+```
+#### Browser
+
+```
+localhost:8000:/palindromo.php
+localhost:8000:/horas.php
+localhost:8000:/cadena.php
+```
